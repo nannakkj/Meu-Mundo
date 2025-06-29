@@ -1,7 +1,7 @@
 .background {
     width: 100%;
     height: 100vh;
-    background-color: var(--background);
+    background-color: var(--gray_1);
 }
 
 .center_text{
@@ -16,7 +16,38 @@
 .center_text h1{
     font-size: 8rem;
     font-family: "Quicksand";
-    color: var(--text_white_1);
+    color: var(--white_1);
     letter-spacing:-.5rem;
 }
 
+.search_bar{
+    position: relative;
+    font-family: "Quicksand";
+    background-color: rgb(49, 49, 49);
+    color: var(--white_1);
+    border: 0;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4rem;
+    width: 50rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: .8rem;
+    padding-right: 1rem;
+    padding-bottom: .8rem;
+}
+
+.search_bar::placeholder{
+    top: 45%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 2rem;
+}
+
+.search_bar:focus{
+    outline: none;
+}

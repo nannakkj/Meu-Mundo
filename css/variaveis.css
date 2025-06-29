@@ -7,7 +7,8 @@
 }
 
 :root{
-    --background: rgb(26, 25, 25);
-    --text_white_1: rgb(241, 241, 241);
+    --gray_1: rgb(26, 25, 25);
+    --gray_2: rgb(80, 80, 80);
+    --white_1: rgb(241, 241, 241);
 }
 
