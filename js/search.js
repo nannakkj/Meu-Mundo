@@ -2,14 +2,14 @@ const categorias = {
     calculadora: ["Calculo", "Calculadora", "Matematica", "Conta"],
     teste: ["1", "2", "3", "4"],
     jogos: ["game", "jogo", "videogame"],
-    ajuda: ["help", "socorro", "ajuda"]
+    Conversos_Moedas_Rpg: ["rpg", "dinheiro", "conversor", "moeda"]
 };
 
 const links = {
     calculadora: "/calculadora.html",
     teste: "/teste.html",
     jogos: "/jogos.html",
-    ajuda: "/ajuda.html"
+    Conversos_Moedas_Rpg: "/html/conversor.html"
 };
 
 function filtrarResultados() {
@@ -18,7 +18,6 @@ function filtrarResultados() {
     resultados.innerHTML = "";
 
     if (text === "") {
-        resultados.style.display = "none";
         return;
     }
 
@@ -41,5 +40,4 @@ function filtrarResultados() {
         }
     }
 
-    resultados.style.display = (encontrou ? "block" : "none");
 }
