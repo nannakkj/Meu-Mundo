@@ -12,8 +12,17 @@
     <div class="center_text">
         <h1>Nanna</h1>
     </div>
-    <textarea class="search_bar" placeholder="Faça sua pesquisa" 
-  oninput="this.style.height=''; this.style.height = this.scrollHeight + 'px'" 
-  rows="1" style="overflow:hidden; resize:none;"></textarea>
+    <textarea 
+  class="search_bar" 
+  placeholder="Faça sua pesquisa" 
+  oninput="this.style.height=''; this.style.height = this.scrollHeight + 'px'; filtrarResultados();" 
+  rows="1" 
+  style="overflow:hidden; resize:none;">
+</textarea>
+
+    <div class="resultado" id="resultado"></div>
+
+
+    <script src="/js/search.js"></script>
 </body>
 </html>
